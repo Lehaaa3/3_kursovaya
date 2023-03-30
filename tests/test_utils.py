@@ -30,6 +30,6 @@ def test_get_last_data(test_data):
 
 def test_get_formatted_data(test_data):
     data = get_formatted_data(test_data[:1])
-    assert data == ['26.08.2019 Перевод организации\nMaestro 1596 83** **** 5199 -> Счет **9589\n31957.58 руб.']
+    assert data == ['26.08.2019 Перевод организации\nMaestro 1596 83** **** 5199 -> Счет **9589\n31957.58 руб.\n']
     data = get_formatted_data(test_data[1:2])
-    assert data == ['03.07.2019 Перевод организации\n[СКРЫТО] -> Счет **5560\n8221.37 USD']
+    assert data == ['03.07.2019 Перевод организации\n[СКРЫТО]  -> Счет **5560\n8221.37 USD\n']

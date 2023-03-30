@@ -6,7 +6,7 @@ def main():
     Функция основного кода программы, выводит информацию о транзакциях
     """
     OPERATIONS_URL = "https://api.npoint.io/965a8959441d23a36a83"
-    COUNT_LAST_VALUES = 5
+    COUNT_LAST_VALUES = 80
     FILTERED_EMPTY_FROM = True
 
     data, info = get_data(OPERATIONS_URL)
